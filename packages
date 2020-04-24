@@ -1,0 +1,13 @@
+gzip
+pacman
+systemd
+base-devel
+git
+tmux
+fish
+cmake
+ninja
+gdb
+clang
+openssh
+qt5-base
