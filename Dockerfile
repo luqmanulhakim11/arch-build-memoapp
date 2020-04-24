@@ -16,6 +16,8 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
 RUN ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
 
+RUN mkdir $HOME/projects && chown -R me:me $HOME/projects
+
 ENV LANG=en_US.UTF-8
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
